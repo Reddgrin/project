@@ -1,16 +1,21 @@
 "use strict";
 
-console.log('arr'+ "- object");
+const numberOfFilms = +prompt("How manny movies you done allready?", "");
 
-let incr = 10,
-    decr = 10;
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies:{},
+    actors: {},
+    genres:[],
+    private: false
+};
 
+const a = prompt('Last wached movie?', ''),
+      b =  prompt('please ocenice movie?', ''),
+      c = prompt('Last wached movie?', ''),
+      d = prompt('please ocenice movie?', '');
 
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-console.log(++incr);
-console.log(--decr);
-
-const isChecked = true,
-      isClose = true; 
-
-      console.log(isChecked || isClose);
+console.log(personalMovieDB);
